@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Анастасия Подгайко](https://up.htmlacademy.ru/htmlcss/25/user/966011).
-* Наставник: `Неизвестно`.
+* Наставник: [Дарья Глаголь] (https://htmlacademy.ru/profile/dariaglagol).
 
 ---
 
