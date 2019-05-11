@@ -21,6 +21,50 @@
     </header>
 
     <main class="container">
+        <section class="infrastructure">
+          <h2>Инфраструктура</h2>
+          <label>
+            <input type="checkbox" name="pool" checked>
+            Бассейн
+          </label>
+          <label>
+            <input type="checkbox" name="parking">
+            Парковка
+          </label>
+          <label>
+            <input type="checkbox" name="Wi-fi">
+            Wi-fi
+          </label>
+        </section>
+
+        <section class="type-of-housing-checked">
+            <h2>Тип жилья</h2>
+            <label>
+              <input type="checkbox" name="hotel" checked>
+              Гостиница
+            </label>
+            <label>
+              <input type="checkbox" name="motel" checked>
+              Мотель
+            </label>
+            <label>
+              <input type="checkbox" name="apartment" checked>
+              Апартаменты
+            </label>
+          </section>
+
+          <section class="price-range">
+              <h2>Стоимость в сутки(р):</h2>
+              <table>
+                <tr>
+                  <td>от 0</td>
+                  <td>до 3000</td>
+                </tr>
+              </table>
+              <input type="range" id="cost" name="cost" min="0" max="3000" step="1">
+              <input type="submit" value="Показать">
+          </section>
+
         <section class="catalog">
           <h2 class="visually-hidden">Поиск гостиницы</h2>
             <ul class="catalog-list">
