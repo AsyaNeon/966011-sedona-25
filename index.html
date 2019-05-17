@@ -76,17 +76,40 @@
     </main>
 
     <footer class="main-footer">
-        <b class="footer-visitSEDONA">#visitSEDONA</b>
-            <ul class="footer-social">
-              <li><a class="social-button" href="#">Твиттер</a></li>
-              <li><a class="social-button" href="#">Фейсбук</a></li>
-              <li><a class="social-button" href="#">Ютуб</a></li>
-            </ul>
-          <p class="footer-copyright">
-              <span>Website by</span>
-            <a class="button-HTMLacademy" href="https://htmlacademy.ru">HTML Academy</a>
-          </p>
+      <b class="footer-visitSEDONA">#visitSEDONA</b>
+      <ul class="footer-social">
+        <li><a class="social-button" href="#">Twitter</a></li>
+        <li><a class="social-button" href="#">Facebook</a></li>
+        <li><a class="social-button" href="#">Youtube</a></li>
+      </ul>
+      <p class="footer-copyright">
+        <span>Website by</span>
+        <a class="button-HTMLacademy" href="https://htmlacademy.ru">HTML Academy</a>
+      </p>
     </footer>
+
+    <form action="#" method="post">
+      <label>
+        Дата заезда:
+        <input type="date" name="date-of-arrival"> <!--Не очень поняла как в этом место написать. 
+          Если взять поле date, то дата отображается не так как на макете. В таком случае надо брать поле text или это потом можно 
+          как-то исправить?-->
+        <!--<input type="text" name="date-of-arrival" placeholder="24 апреля 2017">-->
+      </label>
+      <label>
+        Дата выезда:
+        <input type="date" name="date-of-departure">
+      </label>
+      <label>
+        Взрослые:
+        <input type="number" name="adults" min="1" step="1">
+      </label>
+      <label>
+        Дети:
+          <input type="number" name="children" min="0" step="1">
+      </label>
+      <input type="submit" value="Найти">
+    </form>
 
   </body>
 </html>
