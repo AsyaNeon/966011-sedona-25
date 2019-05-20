@@ -139,19 +139,28 @@
           </g>
         </svg>
       </label>
+      <label class="number-of-people" for="adults">Взрослые:</label>
       <label class="number-of-people">
-        Взрослые:
-        <span class="button-minus">-</span>
-        <input class="adults" type="number" name="adults" min="1" step="1">
-        <span class="button-plus">+</span>
+        <input class="button btn-minus" type="button" value="Уменьшить">
+        -
       </label>
+      <input class="adults" type="number" name="adults" id="adults" min="1" step="1">
       <label class="number-of-people">
-        Дети:
-        <span class="button-minus">-</span>
-        <input class="children" type="number" name="children" min="0" step="1">
-        <span class="button-plus">+</span>
+        <input class="button btn-plus" type="button" value="Увеличить">
+        +
       </label>
-      <input class="button button-submit" type="submit" value="Найти">
+      <label class="number-of-people" for="children">Дети:</label>
+      <label class="number-of-people">
+        <input class="button btn-minus" type="button" value="Уменьшить">
+        -
+      </label>
+      <input class="children" type="number" name="children" id="children" min="0" step="1">
+      <label class="number-of-people">
+        <input class="button btn-plus" type="button" value="Увеличить">
+        +
+      </label>
+      
+      <input class="button btn-submit" type="submit" value="Найти">
     </form>
 
   </body>
