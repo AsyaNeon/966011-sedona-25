@@ -22,8 +22,8 @@
 
     <main class="container">
       <form>
-        <div class="infrastructure">
-          <h2>Инфраструктура</h2>
+        <fieldset class="infrastructure">
+          <legend>Инфраструктура</legend>
           <label>
             <input type="checkbox" name="pool" checked>
             Бассейн
@@ -36,10 +36,10 @@
             <input type="checkbox" name="Wi-fi">
             Wi-fi
           </label>
-        </div>
+        </fieldset>
 
-        <div class="type-of-housing-checked">
-          <h2>Тип жилья</h2>
+        <fieldset class="type-of-housing-checked">
+          <legend>Тип жилья</legend>
           <label>
             <input type="checkbox" name="hotel" checked>
             Гостиница
@@ -52,19 +52,24 @@
             <input type="checkbox" name="apartment" checked>
             Апартаменты
           </label>
-        </div>
+        </fieldset>
 
-        <div class="price-range">
-          <h2>Стоимость в сутки(р):</h2>
-          <table>
-            <tr>
-              <td>от 0</td>
-              <td>до 3000</td>
-            </tr>
-          </table>
-          <input type="range" id="cost" name="cost" min="0" max="3000" step="1">
-          <input type="submit" value="Показать">
-        </div>
+        <fieldset class="price-range">
+          <legend>Стоимость в сутки(р):</legend>
+          <label class="visually-hidden">
+            <input type="number" name="price-range-min" min="1" step="1">
+            минимальная стоимость
+          </label>
+          <label class="visually-hidden">
+            <input type="number" name="price-range-max" max="3000" step="1">
+            максимальная стоимость
+          </label>
+          <div class="range-1"></div>
+          <div class="range-2"></div>
+          <div class="strip-1"></div>
+          <div class="strip-2"></div>
+          <input class="button" type="button" value="Показать">
+        </fieldset>
       </form>
 
       <section class="catalog">
@@ -82,8 +87,8 @@
               <p class="type-of-housing">Гостиница</p>
               <p class="catalog-item-price">
                 <span>от 4 000 ₽</span>
-                <a class="button" href="#">Подробнее</a>
-                <a class="button" href="#">Забронировать</a>
+                <a class="button button-detailed" href="#">Подробнее</a>
+                <a class="button button-reservation" href="#">Забронировать</a>
               </p>
               <span class="stars"></span>
               <p class="rating">Рейтинг:8,5</p>
@@ -100,8 +105,8 @@
               <p class="type-of-housing">Мотель</p>
               <p class="catalog-item-price">
                 <span>от 3 000 ₽</span>
-                  <a class="button" href="#">Подробнее</a>
-                  <a class="button" href="#">Забронировать</a>
+                  <a class="button button-detailed" href="#">Подробнее</a>
+                  <a class="button button-reservation" href="#">Забронировать</a>
               </p>
               <span class="stars"></span>
               <p class="rating">Рейтинг:8,9</p>
@@ -118,8 +123,8 @@
               <p class="type-of-housing">Апартаменты</p>
               <p class="catalog-item-price">
                 <span>от 2 000 ₽</span>
-                <a class="button" href="#">Подробнее</a>
-                <a class="button" href="#">Забронировать</a>
+                <a class="button button-detailed" href="#">Подробнее</a>
+                <a class="button button-reservation" href="#">Забронировать</a>
               </p>
               <span class="stars"></span>
               <p class="rating">Рейтинг:9,2</p>
@@ -131,9 +136,9 @@
     <footer class="main-footer"> 
       <b class="footer-#">#visitSEDONA</b>
         <ul class="footer-social">
-          <li><a class="social-button" href="#">Twitter</a></li>
-          <li><a class="social-button" href="#">Facebook</a></li>
-          <li><a class="social-button" href="#">Youtube</a></li>
+          <li><a class="visually-hidden social-button" href="#">Twitter</a></li>
+          <li><a class="visually-hidden social-button" href="#">Facebook</a></li>
+          <li><a class="visually-hidden social-button" href="#">Youtube</a></li>
         </ul>
         <p class="footer-copyright">
           <span>Website by</span>
