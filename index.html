@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
@@ -70,7 +73,7 @@
         <p>Заинтересовались?</p>
         <p>Укажите предполагаемые даты поездки,
             и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
-        <a class="button" href="#">Поиск гостиницы в Седоне</a>
+        <a class="button btn-search-hotel" href="#">Поиск гостиницы в Седоне</a>
         <img src="img/map.jpg" width="1200" height="755" alt="Карта расположения гостиниц">
       </section>
     </main>
@@ -78,9 +81,9 @@
     <footer class="main-footer">
       <b class="footer-visitSEDONA">#visitSEDONA</b>
       <ul class="footer-social">
-        <li><a class="visually-hidden social-button" href="#">Twitter</a></li>
-        <li><a class="visually-hidden social-button" href="#">Facebook</a></li>
-        <li><a class="visually-hidden social-button" href="#">Youtube</a></li>
+        <li><a class="visually-hidden social-btn " href="#">Twitter</a></li>
+        <li><a class="visually-hidden social-btn" href="#">Facebook</a></li>
+        <li><a class="visually-hidden social-btn" href="#">Youtube</a></li>
       </ul>
       <p class="footer-copyright">
         <span>Website by</span>
@@ -88,7 +91,7 @@
       </p>
     </footer>
 
-    <form action="#" method="post">
+    <form class="display-none" action="#" method="post">
       <label class="rest-time">
         Дата заезда:
         <input class="date-of-arrival" type="text" name="date-of-arrival" placeholder="24 апреля 2017">
