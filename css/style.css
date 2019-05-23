@@ -66,11 +66,11 @@ a {
 }
 
 .site-navigation a:focus {
-    color: rgba(0, 0, 0, 0.3);
+    color: #766357;
 }
 
 .site-navigation a:active {
-    color: #766357;
+    color: rgba(0, 0, 0, 0.3);
 }
 
 .advantages {
@@ -117,7 +117,8 @@ a {
     background-color: #604e43;
 }
 
-.btn-search-hotel:focus {
+.btn-search-hotel:active {
+    color: rgba(255, 255, 255, 0.3);
     background-color: #503e33;
 }
 
@@ -146,7 +147,7 @@ a {
     color: #81b3d2;
 }
 
-.name-housing:focus {
+.name-housing:active {
     color: rgba(0, 0, 0, 0.3);
 }
 
@@ -158,7 +159,7 @@ a {
     background-color: #669ec0;
 }
 
-.btn-detailed:focus {
+.btn-detailed:active {
     color: rgba(255, 255, 255, 0.3);
     background-color: #5496bd;
 }
@@ -171,7 +172,7 @@ a {
     background-color: #604e43;
 }
 
-.btn-reservation:focus {
+.btn-reservation:active {
     color: rgba(255, 255, 255, 0.3);
     background-color: #503e33;
 }
