@@ -61,16 +61,17 @@ a {
     color: #000000;
 }
   
-.site-navigation a:hover {
-    color: #81b3d2;
-}
-
+.site-navigation a:hover,
 .site-navigation a:focus {
-    color: #766357;
+    color: #81b3d2;
 }
 
 .site-navigation a:active {
     color: rgba(0, 0, 0, 0.3);
+} 
+
+.site-navigation-current a {
+    color: #766357;
 }
 
 .advantages {
@@ -113,7 +114,8 @@ a {
     background-color: #766357;
 }
 
-.btn-search-hotel:hover {
+.btn-search-hotel:hover,
+.btn-search-hotel:focus {
     background-color: #604e43;
 }
 
@@ -143,7 +145,8 @@ a {
     color: #000000;
 }
   
-.name-housing:hover {
+.name-housing:hover,
+.name-housing:focus {
     color: #81b3d2;
 }
 
@@ -155,7 +158,8 @@ a {
     list-style: none;
 }
   
-.btn-detailed:hover {
+.btn-detailed:hover,
+.btn-detailed:focus {
     background-color: #669ec0;
 }
 
@@ -168,7 +172,8 @@ a {
     background-color: #766357;
 }
   
-.btn-reservation:hover {
+.btn-reservation:hover,
+.btn-reservation:focus {
     background-color: #604e43;
 }
 
