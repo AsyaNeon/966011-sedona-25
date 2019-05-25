@@ -9,11 +9,11 @@
   </head>
   <body>
 
-    <header class="background main-header">
+    <header class="container background main-header">
       <a class="main-header-logo">
           <img src="img/logo.svg" width="148" height="59" alt="Логотип Седоны">
       </a>
-        <nav class="main-navigation">
+      <nav class="main-navigation">
         <ul class="site-navigation">
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
@@ -23,7 +23,7 @@
       </nav>
     </header>
 
-    <main class=" container">
+    <main class="container">
       <h1 class="visually-hidden">Седона - город в Аризоне</h1>
       
       <section class="advantages">
@@ -71,19 +71,19 @@
       <section class="search-hotel">
         <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
         <p>Заинтересовались?</p>
-        <p class="search-hotel-text">Укажите предполагаемые даты поездки,
+        <p class="search-hotel-text">Укажите предполагаемые даты поездки, <br>
             и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
         <a class="button btn-search-hotel" href="#">Поиск гостиницы в Седоне</a>
         <img src="img/map.jpg" width="1200" height="755" alt="Карта расположения гостиниц">
       </section>
     </main>
 
-    <footer class="main-footer">
+    <footer class="main-footer container">
       <b class="footer-visitSEDONA">#visitSEDONA</b>
       <ul class="footer-social">
-        <li><a class="visually-hidden button social-btn" href="#">Twitter</a></li>
-        <li><a class="visually-hidden button social-btn" href="#">Facebook</a></li>
-        <li><a class="visually-hidden button social-btn" href="#">Youtube</a></li>
+        <li><a class="button social-btn" href="#">Twitter</a></li>
+        <li><a class="button social-btn" href="#">Facebook</a></li>
+        <li><a class="button social-btn" href="#">Youtube</a></li>
       </ul>
       <p class="footer-copyright">
         <span>Website by</span>
@@ -91,7 +91,7 @@
       </p>
     </footer>
 
-    <form class="display-none" action="#" method="post">
+    <form class="container search-hotel-form" action="#" method="post">
       <label class="rest-time">
         Дата заезда:
         <input class="date-of-arrival" type="text" name="date-of-arrival" placeholder="24 апреля 2017">
@@ -142,16 +142,17 @@
           </g>
         </svg>
       </label>
+      <div class="wrapper">
       <label class="number-of-people" for="adults">Взрослые:</label>
-        <button class="button btn-minus" type="button">-</button>
+        <button class="button btn-minus" type="button btn-minus">-</button>
       <input class="adults" type="number" name="adults" id="adults" min="1" step="1">
-        <button class="button btn-plus" type="button">+</button>
+        <button class="button btn-plus" type="button btn-plus">+</button>
       <label class="number-of-people" for="children">Дети:</label>
-        <button class="button btn-minus" type="button">-</button>
+        <button class="button btn-minus" type="button btn-minus">-</button>
       <input class="children" type="number" name="children" id="children" min="0" step="1">
-        <button class="button btn-plus" type="button">+</button>
-      
-      <input class="button btn-submit" type="submit" value="Найти">
+        <button class="button btn-plus" type="button btn-plus">+</button>
+      </div>
+      <button class="button btn-submit" type="submit">Найти</button>
     </form>
 
   </body>
