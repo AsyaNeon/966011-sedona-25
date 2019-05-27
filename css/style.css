@@ -9,10 +9,6 @@ body {
     
 }
 
-/* body > * {
-    background-color: rgba(0, 0, 0, 0.3);
-} */
-
 .container {
     width: 1200px;
     margin: 0 auto;
@@ -267,6 +263,34 @@ a {
 
 
 /* hotels.html */
+
+
+.catalog-item {
+    display: flex;
+    margin-left: 72px;
+    margin-right: 72px;
+}
+
+.catalog-item-image {
+    margin-right: 30px; 
+}
+
+.stars {
+    display: block;
+    width: 73px;
+    height: 17px;
+    background-image: url(../img/star.svg);
+    background-repeat: repeat-x;
+    margin-left: auto;
+}
+
+.stars-2 {
+    width: 54px;
+}
+
+.stars-3 {
+    width: 37px;
+}
 
 .name-housing {
     color: #000000;
