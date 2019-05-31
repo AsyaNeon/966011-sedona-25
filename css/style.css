@@ -131,11 +131,13 @@ img {
 
 .pre-advantages {
     text-align: center;
+    
 }
 
-.advantages h2 {
-    margin: 0;
+.pre-advantages h2 {
+    margin: 0 auto;
     margin-bottom: 40px;
+    width: 450px;
 }
 
 .advantages p {
