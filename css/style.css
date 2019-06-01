@@ -330,6 +330,7 @@ img {
 }
 
 .rest-time {
+    display: block; 
     position: relative;
 }
 
@@ -351,10 +352,6 @@ img {
     font-weight: 700;
 }
 
-.search-hotel-form label {
-    display: block; 
-}
-
 .search-hotel-form input {
     text-transform: uppercase;
     height: 38px;
@@ -362,18 +359,37 @@ img {
     border: none;
     padding: 0;
     padding-left: 10px;
-    margin-left: 25px;
     margin-bottom: 29px;
     background-color: #f2f2f2;
 }
 
-.form-container label {
-    display: inline-block;
-    margin-right: 35px;
-    margin-left: 55px;
+.date-of-arrival {
+    margin-left: 21px;
 }
 
-.form-container label:nth-child(1) {
+.date-of-departure {
+    margin-left: 17px;
+}
+
+.number-of-people {
+    display: inline-block;
+    margin-right: 27px;
+}
+
+.number-of-people:nth-child(1) {
+    margin-right: 34px;
+}
+
+.adults-container,
+.children-container {
+    display: inline-block;
+}
+
+.adults-container {
+    margin-right: 63px;
+}
+
+.number-of-people:nth-child(1) {
     margin-left: 0;
 }
 

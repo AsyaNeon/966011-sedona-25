@@ -192,13 +192,17 @@
       </label>
       <div class="form-container">
       <label class="number-of-people" for="adults">Взрослые:</label>
-        <button class="button btn-minus" type="button">-</button>
-      <input class="adults" type="number" name="adults" id="adults" min="1" step="1">
-        <button class="button btn-plus" type="button">+</button>
+      <div class="adults-container">
+          <button class="button btn-minus" type="button">-</button>
+        <input class="adults" type="number" name="adults" id="adults" min="1" step="1">
+          <button class="button btn-plus" type="button">+</button>
+      </div>
       <label class="number-of-people" for="children">Дети:</label>
-        <button class="button btn-minus" type="button">-</button>
-      <input class="children" type="number" name="children" id="children" min="0" step="1">
-        <button class="button btn-plus" type="button">+</button>
+      <div class="children-container">
+          <button class="button btn-minus" type="button">-</button>
+        <input class="children" type="number" name="children" id="children" min="0" step="1">
+          <button class="button btn-plus" type="button">+</button>
+      </div>
       </div>
       <button class="button btn-submit" type="submit">Найти</button>
     </form>
