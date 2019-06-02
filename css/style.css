@@ -1,9 +1,9 @@
 body {
     margin: 0;
-    font-family: "PT Sans Narrow", Arial, sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 14px;
     line-height: 21px;
-    font-weight: 500;
+    font-weight: 400;
     text-transform: uppercase;
     background-color: #ffffff;
     
@@ -42,9 +42,9 @@ img {
 .background {
     background-image: url(../img/mask-index.svg), url(../img/welcome-index.svg), url("../img/bg-index.jpg");
     background-repeat: no-repeat;
-    background-position: bottom center, center 145px, top center;
+    background-position: bottom center, center 132px, top center;
     background-size: contain, 459px 353px, cover;
-    min-height: 560px;
+    min-height: 565px;
 }
   
 .button {
@@ -65,7 +65,7 @@ img {
 .main-header-logo {
     position: absolute;
     left: 50%;
-    margin-left: -74px;
+    margin-left: -75px;
 }
   
 .main-navigation {
@@ -197,15 +197,19 @@ img {
 }
 
 .features h3 {
-    position: relative;
-    padding-top: 160px;
     padding-bottom: 25px;
 }
 
-.features h3::before {
+.feature-item {
+    position: relative;
+    padding-top: 160px;
+}
+
+.feature-item::before {
     content: "";
     position: absolute;
-    background-image: url(../img/icon-1-feature-item.svg);
+    
+    background-repeat: no-repeat;
     width: 74px;
     height: 72px;
     top: 60px;
@@ -213,15 +217,17 @@ img {
     margin-left: -37px;
 }
 
-.features h3::before:nth-child(2) {
-    content: "";
-    position: absolute;
+.feature-house::before {
+    background-image: url(../img/icon-1-feature-item.svg);
+}
+
+.feature-food::before {
     background-image: url(../img/icon-2-feature-item.svg);
-    width: 74px;
-    height: 73px;
-    top: 60px;
-    left: 50%;
-    margin-left: -37px;
+    height: 77px;
+}
+
+.feature-souvenirs::before {
+    background-image: url(../img/icon-3-feature-item.svg);
 }
 
 .features p {
@@ -269,11 +275,14 @@ img {
 
 .main-footer {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     color:#000000;
     background-color: rgba(249, 251, 246, 0.9);
-    padding: 36px 73px;
+    padding: 36px 100px 36px 132px;
+}
+
+.inner-page {
+    background-color: #ffffff;
 }
 
 .footer-visitsedona {
@@ -309,6 +318,11 @@ img {
 .social-btn:active {
     color: rgba(255, 255, 255, 0.3);
     background-color: #5496bd;
+}
+
+.btn-htmlacademy {
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .btn-htmlacademy path,
@@ -455,12 +469,38 @@ img {
 .catalog-item {
     display: flex;
     flex-wrap: wrap;
-    list-style: none;
     align-items: center;
+    list-style: none;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.catalog-item h3 {
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.catalog-item p {
+    margin: 0;
+    margin-bottom: 18px;
+}
+
+.catalog-item p:last-of-type {
+    margin-bottom: 0;
 }
 
 .catalog-item-image {
     margin-right: 30px; 
+}
+
+.type-of-housing {
+    position: relative;
+}
+
+.type-of-housing span {
+    position: absolute;
+    left: 130px;
 }
 
 .rating-container {
@@ -473,7 +513,7 @@ img {
     background-image: url(../img/star.svg);
     background-repeat: repeat-x;
     margin-left: auto;
-    margin-bottom: 30px;
+    margin-bottom: 48px;
 }
 
 .stars-4 {
@@ -486,6 +526,16 @@ img {
 
 .stars-2 {
     width: 37px;
+}
+
+.rating { 
+    /* мы же можем задать рейтингу фиксированный размер? 
+    т.к. выше 10 он не может быть и соответственно размер бока меняться не должен
+    или лучше сделать padding?*/
+    width: 110px;
+    height: 27px;
+    text-align: center;
+    background-color: #f2f2f2;
 }
 
 .name-housing {
