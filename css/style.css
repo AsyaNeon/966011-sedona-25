@@ -161,7 +161,6 @@ img {
 
 .advantages-list h3 {
     text-align: center;
-    padding-top: 50px;
     padding-bottom: 70px;
 }
 
@@ -208,10 +207,9 @@ img {
 .feature-item::before {
     content: "";
     position: absolute;
-    
     background-repeat: no-repeat;
     width: 74px;
-    height: 72px;
+    height: 77px;
     top: 60px;
     left: 50%;
     margin-left: -37px;
@@ -223,7 +221,6 @@ img {
 
 .feature-food::before {
     background-image: url(../img/icon-2-feature-item.svg);
-    height: 77px;
 }
 
 .feature-souvenirs::before {
