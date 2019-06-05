@@ -168,25 +168,64 @@ img {
     text-align: center;
     padding-left: 30px;
     padding-right: 30px;
-    padding-bottom: 65px;
+    padding-bottom: 60px;
 }
 
 .advantages-item:nth-child(1),
-.advantages-item:nth-child(2) {
+.advantages-item:nth-child(5) {
+    color: #ffffff;
     background-color: #81b3d2;
-}
-
-.advantages-item:nth-child(1)::before {
-    content: url(../img/img-1-advantages.jpg);
-}
-
-.advantages-item:nth-child(2)::before {
-    content: url(../img/img-2-advantages.jpg);
 }
 
 .advantages-item {
     background-color: #eeeeee;
-    flex-grow: 1;
+    flex-basis: 400px;
+    padding-top: 45px;
+}
+
+.advantages-item h3 {
+    position: relative;
+    width: 130px;
+    margin: 0 auto;
+}
+
+.advantages-item:nth-child(8) h3 {
+    width: 100px;
+}
+
+.advantages-item h3::after {
+    content: "— №1 —";
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    margin-left: -30px;
+}
+
+.advantages-item p {
+    width: 304px;
+    margin: 0 auto;
+}
+
+.advantages-item:nth-child(6) p,
+.advantages-item:nth-child(7) p {
+    width: 260px;
+}
+
+.advantages-item:nth-child(8) p {
+    width: 250px;
+}
+
+.advantages-item-bg-1 {
+    background-image: url(../img/img-1-advantages.jpg); 
+    background-repeat: no-repeat;
+    flex-basis: 800px;
+}
+
+.advantages-item-bg-2 {
+    background-image: url(../img/img-2-advantages.jpg); 
+    background-repeat: no-repeat;
+    flex-basis: 800px;
+    
 }
 
 .features {
@@ -238,10 +277,14 @@ img {
 .search-hotel p {
     padding: 0;
     margin: 0;
+}
+
+.search-hotel  p:nth-of-type(1) {
     margin-bottom: 13px;
 }
 
 .search-hotel {
+    position: relative;
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
@@ -256,6 +299,8 @@ img {
 
 .btn-search-hotel {
     display: inline-block;
+    font-size: 21px;
+    line-height: 26px;
     padding: 30px 142px;
     background-color: #766357;
 }
@@ -270,70 +315,33 @@ img {
     background-color: #503e33;
 }
 
-.main-footer {
-    display: flex;
-    align-items: center;
-    color:#000000;
-    background-color: rgba(249, 251, 246, 0.9);
-    padding: 36px 100px 36px 132px;
-}
-
-.inner-page {
-    background-color: #ffffff;
-}
-
-.footer-visitsedona {
-    font-size: 21px;
-    line-height: 26px;
-}
-
-.footer-social {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    margin: 0 auto;
-    padding: 0;
-    flex-basis: 150px;
-}
-
-.social-btn {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: 47px;
-    height: 48px;
-    color: #ffffff;
-    background-color: #81b3d2;
-}
-
-.social-btn:hover,
-.social-btn:focus {
-    background-color: #669ec0;
-}
-
-.social-btn:active {
-    color: rgba(255, 255, 255, 0.3);
-    background-color: #5496bd;
-}
-
-.btn-htmlacademy {
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.btn-htmlacademy path,
-.btn-htmlacademy rect {
-    fill: #000000;
-}
-
 .search-hotel-form {
+    position: absolute;
+    z-index: 2;
+    top: 232px;
+    left: 50%;
+    margin-left: -287px;
     width: 574px;
-    margin: 0 auto;
-    margin-top: 55px;
+    background-color: #ffffff;
     padding-top: 55px;
     padding-bottom: 55px;
     text-align: center;
+}
+
+::-webkit-input-placeholder {
+    color:#000000;
+}
+
+::-moz-placeholder {
+    color:#000000;
+}
+
+:-moz-placeholder {
+    color:#000000;
+}
+
+:-ms-input-placeholder {
+    color:#000000;
 }
 
 .rest-time {
@@ -381,16 +389,17 @@ img {
 }
 
 .number-of-people:nth-child(1) {
-    margin-right: 37px;
+    margin-right: 32px;
 }
 
 .adults-container,
 .children-container {
     display: inline-block;
+    vertical-align: middle;
 }
 
 .adults-container {
-    margin-right: 54px;
+    margin-right: 50px;
 }
 
 .number-of-people:nth-child(1) {
@@ -401,7 +410,7 @@ img {
     vertical-align: middle;
     text-align: center;
     width: 38px;
-    margin: 0 -4px;
+    margin: 0 -8px;
     padding: 0;
 }
 
@@ -451,6 +460,74 @@ img {
     background-color: #5496bd;
 }
 
+.map {
+    position: relative;
+}
+
+.main-footer {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    color:#000000;
+    background-color: rgba(249, 251, 246, 0.9);
+    padding: 25px 100px 25px 132px;
+    margin-top: -134px;
+}
+
+.inner-page {
+    background-color: #ffffff;
+    margin-top: 0;
+}
+
+.footer-visitsedona {
+    font-size: 21px;
+    line-height: 26px;
+    margin-right: 20px;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    flex-basis: 150px;
+}
+
+.social-btn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 47px;
+    height: 48px;
+    color: #ffffff;
+    background-color: #81b3d2;
+}
+
+.social-btn:hover,
+.social-btn:focus {
+    background-color: #669ec0;
+}
+
+.social-btn:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #5496bd;
+}
+
+.btn-htmlacademy {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.btn-htmlacademy path,
+.btn-htmlacademy rect {
+    fill: #000000;
+}
+
+
+
 
 
 /* hotels.html */
@@ -468,9 +545,19 @@ img {
     flex-wrap: wrap;
     align-items: center;
     list-style: none;
+    position: relative;
     padding-top: 30px;
-    padding-bottom: 30px;
-    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 31px;
+}
+
+.catalog-item::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    bottom: 0;
+    left: -72px;
+    right: -72px;
+    background-color: #e5e5e5;
 }
 
 .catalog-item h3 {
@@ -492,12 +579,19 @@ img {
 }
 
 .type-of-housing {
-    position: relative;
+    display: flex;
 }
 
-.type-of-housing span {
-    position: absolute;
-    left: 130px;
+.price-hotel {
+    margin-left: 45px;
+}
+
+.price-motel {
+    margin-left: 70px;
+}
+
+.price-apartment {
+    margin-left: 25px;
 }
 
 .rating-container {
@@ -526,12 +620,7 @@ img {
 }
 
 .rating { 
-    /* мы же можем задать рейтингу фиксированный размер? 
-    т.к. выше 10 он не может быть и соответственно размер бока меняться не должен
-    или лучше сделать padding?*/
-    width: 110px;
-    height: 27px;
-    text-align: center;
+    padding: 5px 13px 6px 16px;
     background-color: #f2f2f2;
 }
 
