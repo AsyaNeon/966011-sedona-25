@@ -9,16 +9,19 @@ body {
     
 }
 
-.wrapper {
-    width: 1200px;
+.wrapper {  
+    width: 1280px;
     margin: 0 auto;
-    box-shadow: -40px 0 40px #dbdbdb,
-                40px 0 40px #dbdbdb;
+    background-color: #f2f2f2;
+    
 }
 
 .container {
     width: 1200px;
     margin: 0 auto;
+    background-color: #ffffff;
+    box-shadow: -10px 0 15px #dbdbdb,
+                10px 0 15px #dbdbdb;
 }
 
 .visually-hidden:not(:focus):not(:active),
