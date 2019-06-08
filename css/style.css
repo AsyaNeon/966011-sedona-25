@@ -9,10 +9,16 @@ body {
     
 }
 
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    box-shadow: -40px 0 40px #dbdbdb,
+                40px 0 40px #dbdbdb;
+}
+
 .container {
     width: 1200px;
     margin: 0 auto;
-    padding: 0 40px;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -154,6 +160,7 @@ img {
     justify-content: center;
     margin: 0;
     padding: 0;
+    counter-reset: advantage;
 }
 
 .advantages-list h3,
@@ -205,7 +212,8 @@ img {
 }
 
 .advantages-item h3::after {
-    content: "— №1 —";
+    counter-increment: advantage;
+    content: "— №" counter(advantage) " —";
     position: absolute;
     font-size: 14px;
     font-weight: 400;
@@ -903,21 +911,21 @@ img {
     display: block;
     height: 17px;
     background-image: url(../img/star.svg);
-    background-repeat: repeat-x;
+    background-repeat: space;
     margin-left: auto;
     margin-bottom: 48px;
 }
 
 .stars-4 {
-    width: 72px;
+    width: 88px;
 }
 
 .stars-3 {
-    width: 54px;
+    width: 65px;
 }
 
 .stars-2 {
-    width: 37px;
+    width: 42px;
 }
 
 .rating { 
