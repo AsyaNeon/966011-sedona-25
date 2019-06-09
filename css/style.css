@@ -47,15 +47,7 @@ img {
     max-width: 100%;
     height: auto;
 }
-  
-.background {
-    background-image: url(../img/mask-index.svg), url(../img/welcome-index.svg), url("../img/bg-index.jpg");
-    background-repeat: no-repeat;
-    background-position: bottom center, center 132px, top center;
-    background-size: contain, 459px 353px, cover;
-    padding-bottom: 565px;
-}
-  
+
 .button {
     font: inherit;
     text-align: center;
@@ -69,6 +61,14 @@ img {
 .main-header {
     position: relative;
     padding-bottom: 60px;
+}
+
+.background {
+    background-image: url(../img/mask-index.svg), url(../img/welcome-index.svg), url("../img/bg-index.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 bottom, center 132px, top center;
+    background-size: 1200px auto, 459px 353px, cover;
+    padding-bottom: 565px;
 }
 
 .main-header-logo {
@@ -228,12 +228,14 @@ img {
 .advantages-item-bg-1 {
     background-image: url(../img/img-1-advantages.jpg); 
     background-repeat: no-repeat;
+    background-size: cover;
     flex-basis: 800px;
 }
 
 .advantages-item-bg-2 {
     background-image: url(../img/img-2-advantages.jpg); 
     background-repeat: no-repeat;
+    background-size: cover;
     flex-basis: 800px; 
 }
 
@@ -366,26 +368,6 @@ img {
     display: none;  
 }
 
-::-webkit-input-placeholder {
-    font: inherit;
-    color:#000000;
-}
-
-::-moz-placeholder {
-    font: inherit;
-    color:#000000;
-}
-
-:-moz-placeholder {
-    font: inherit;
-    color:#000000;
-}
-
-:-ms-input-placeholder {
-    font: inherit;
-    color:#000000;
-}
-
 .rest-time {
     display: block; 
     position: relative;
@@ -403,7 +385,7 @@ img {
 .search-hotel-form input {
     font-size: 14px;
     line-height: 26px;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .search-hotel-form input {
@@ -431,6 +413,7 @@ img {
     align-items: center;
     margin-left: 63px;
     margin-right: 55px;
+    margin-bottom: 54px;
 }
 
 .form-container input {
@@ -439,6 +422,16 @@ img {
     width: 38px;
     margin: 0 -8px;
     padding: 0;
+}
+
+.form-container input[type="number"]::-webkit-outer-spin-button,
+.form-container input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.form-container input[type="number"] {
+    -moz-appearance: textfield;
 }
 
 .btn-minus,
@@ -468,10 +461,6 @@ img {
 .btn-minus:active,
 .btn-plus:active {
     color: #81b3d2;
-}
-
-.form-container {
-    margin-bottom: 54px;
 }
 
 .btn-submit {
@@ -514,7 +503,6 @@ img {
     padding: 25px 100px 25px 132px;
     margin-top: -134px;
 }
-
 
 .footer-visitsedona {
     font-size: 21px;
@@ -569,8 +557,6 @@ img {
 
 
 
-
-
 /* hotels.html */
 
 
@@ -581,7 +567,6 @@ img {
 .filter {
    display: flex;
    justify-content: flex-start;
-   
    color: #ffffff;
    background-image: url(../img/bg-hotels.jpg);
    background-repeat: no-repeat;
@@ -595,20 +580,17 @@ img {
     margin: 0;
     padding: 0;
     border: none;
-    display: flex;
-    flex-basis: 255px;
 }
 
 .filter legend {
     font-size: 16px;
     font-weight: 600;
-}
-
-.filter legend {
+    color: #ffffff;
     margin-bottom: 23px;
 }
 
 .filter label {
+    color: #ffffff;
     margin-bottom: 26px;
 }
 
@@ -627,8 +609,10 @@ img {
 }
 
 .checkbox {
+    display: block;
     position: relative;
     padding-left: 40px;
+    margin-right: 147px;
     cursor: pointer;
 }
     
@@ -675,8 +659,7 @@ img {
 .price-controls label {
     display: inline-block;
     font-size: 14px;
-    line-height: 38px;
-    vertical-align: top;
+    margin-top: 7px;
     cursor: pointer;
 }
   
@@ -757,20 +740,8 @@ img {
 .filter-result {
     display: flex;
     align-items: center;
-    position: relative;
-    margin: 0 72px;
-    padding: 30px 0;
-    
-}
-
-.filter-result::after {
-    content: "";
-    position: absolute;
-    height: 1px;
-    bottom: 0;
-    left: -72px;
-    right: -72px;
-    background-color: #e5e5e5;
+    padding: 30px 72px;
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .filter-result h2 {
@@ -852,8 +823,6 @@ img {
 .catalog-list {
     margin: 0;
     padding: 0;
-    margin-left: 72px;
-    margin-right: 72px;
 }
 
 .catalog-item {
@@ -861,19 +830,10 @@ img {
     flex-wrap: wrap;
     align-items: flex-start;
     list-style: none;
-    position: relative;
+    padding: 0 72px;
     padding-top: 30px;
     padding-bottom: 25px;
-}
-
-.catalog-item::after {
-    content: "";
-    position: absolute;
-    height: 1px;
-    bottom: 0;
-    left: -72px;
-    right: -72px;
-    background-color: #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .catalog-item h3 {
