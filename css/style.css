@@ -16,8 +16,8 @@ body {
     width: 1200px;
     margin: 0 auto;
     background-color: #ffffff;
-    box-shadow: -10px -15px 15px #dbdbdb,
-                10px -15px 15px #dbdbdb;
+    box-shadow: -5px -15px 10px #dbdbdb,
+                5px -15px 10px #dbdbdb;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -64,7 +64,7 @@ img {
     background-repeat: no-repeat;
     background-position: bottom, center 132px, top center;
     background-size: 1200px 57px, 459px 353px, cover;
-    padding-bottom: 565px;
+    padding-bottom: 509px;
 }
 
 .main-header-logo {
@@ -144,7 +144,7 @@ img {
 
 .advantages p {
     margin: 0;
-    margin-bottom: 52px;
+    margin-bottom: 54px;
 }
 
 .advantages-list,
@@ -301,15 +301,15 @@ img {
     font-size: 14px;
     line-height: 24px;
     font-weight: 500;
-    margin-bottom: 49px;
+    margin-bottom: 48px;
 }
 
 .btn-search-hotel {
     display: inline-block;
     font-size: 21px;
     line-height: 26px;
-    padding-top: 30px;
-    padding-bottom: 28px;
+    padding-top: 28px;
+    padding-bottom: 30px;
     padding-left: 139px;
     padding-right: 141px;
     background-color: #766357;
@@ -331,10 +331,9 @@ img {
     top: 241px;
     left: 50%;
     margin-left: -285px;
-    width: 570px;
+    width: 460px;
     background-color: #ffffff;
-    padding-top: 55px;
-    padding-bottom: 55px;
+    padding: 55px;
 }
 
 .search-hotel-form-none {
@@ -344,13 +343,12 @@ img {
 .rest-time {
     display: block; 
     position: relative;
-    margin-left: 7px;
 }
 
 .calendar {
     position: absolute;
     top: 8px;
-    right: 65px;
+    right: 10px;
     fill: #a9a9a9;
 }
 
@@ -372,17 +370,17 @@ img {
 
 .search-hotel-form input {
     text-transform: uppercase;
-    height: 38px;
-    width: 330px;
+    height: 37px;
+    width: 332px;
     border: none;
     padding: 0;
-    padding-left: 10px;
+    padding-left: 13px;
     margin-bottom: 29px;
     background-color: #f2f2f2;
 }
 
 .date-of-arrival {
-    margin-left: 21px;
+    margin-left: 20px;
 }
 
 .date-of-departure {
@@ -397,12 +395,11 @@ img {
     background-color: #ffffff;
     outline: 2px solid #e5e5e5;
 }
+
 .form-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 63px;
-    margin-right: 55px;
     margin-bottom: 54px;
 }
 
@@ -425,18 +422,12 @@ img {
 }
 
 .btn-minus,
-.btn-plus,
-.adults,
-.children {
-   width: 38px;
-   height: 38px;
-}
-
-.btn-minus,
 .btn-plus {
     font-family: "Myriad Pro", "Arial", sans-serif;
-    font-size: 14px;
+    font-size: 20px;
     line-height: 26px;
+    width: 37px;
+    height: 37px;
     color: #a9a9a9;
     background-color: #f2f2f2;
 }
@@ -451,6 +442,11 @@ img {
 .btn-minus:active,
 .btn-plus:active {
     color: #81b3d2;
+}
+
+.adults {
+    margin-left: 10px;
+    margin-right: 25px;
 }
 
 .btn-submit {
@@ -498,7 +494,7 @@ img {
 .footer-visitsedona {
     font-size: 21px;
     line-height: 26px;
-    margin-right: 20px;
+    margin-right: 27px;
 }
 
 .footer-social {
@@ -514,7 +510,7 @@ img {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 47px;
+    width: 46px;
     height: 48px;
     color: #ffffff;
     background-color: #81b3d2;
@@ -532,6 +528,14 @@ img {
 
 .social-btn:active {
     fill-opacity: 0.3;
+}
+
+.footer-copyright {
+    padding-top: 2px;
+}
+
+.footer-copyright span {
+    margin-right: 5px;
 }
 
 .btn-htmlacademy {
@@ -591,20 +595,6 @@ img {
     margin-bottom: 26px;
 }
 
-.filter-range {
-    margin-left: auto;
-    width: 330px;
-    color: #ffffff;
-    text-transform: uppercase;
-}
-  
-.filter-range-title {
-    margin-bottom: 9px;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 21px;
-}
-
 .checkbox {
     display: block;
     position: relative;
@@ -632,11 +622,25 @@ img {
     background-image: url(../img/checkbox-on.svg);
     background-repeat: no-repeat;
 }
+
+.filter-range {
+    margin-left: auto;
+    width: 318px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
   
+.filter-range-title {
+    margin-bottom: 9px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+}
+
 .price-controls {
     position: relative;
-    height: 36px;
-    margin-bottom: 20px;
+    height: 34px;
+    margin-bottom: 18px;
     font-size: 0;
     border: 2px solid #ffffff;
     border-radius: 2px;
@@ -656,7 +660,7 @@ img {
 .price-controls label {
     display: inline-block;
     font-size: 14px;
-    margin-top: 7px;
+    margin-top: 6px;
     cursor: pointer;
 }
   
@@ -664,6 +668,10 @@ img {
 .price-controls .max-price {
     width: 90px;
     padding-left: 65px;
+}
+
+.price-controls .max-price {
+    padding-left: 56px;
 }
   
 .price-controls input {
@@ -737,7 +745,7 @@ img {
 .filter-result {
     display: flex;
     align-items: center;
-    padding: 30px 72px;
+    padding: 30px 72px 31px;
     border-bottom: 1px solid #e5e5e5;
 }
 
@@ -828,7 +836,7 @@ img {
     align-items: flex-start;
     list-style: none;
     padding: 0 72px;
-    padding-top: 30px;
+    padding-top: 26px;
     padding-bottom: 25px;
     border-bottom: 1px solid #e5e5e5;
 }
@@ -837,12 +845,12 @@ img {
     font-size: 21px;
     line-height: 26px;
     margin: 0;
-    margin-bottom: 5px;
+    margin-bottom: 7px;
 }
 
 .catalog-item p {
     margin: 0;
-    margin-bottom: 18px;
+    margin-bottom: 17px;
 }
 
 .catalog-item p:last-of-type {
@@ -907,7 +915,7 @@ img {
 }
 
 .btn-detailed {
-    margin-right: 5px;
+    margin-right: 3px;
 }
 
 .btn-detailed,
