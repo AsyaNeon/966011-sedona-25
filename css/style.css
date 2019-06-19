@@ -494,15 +494,18 @@ img {
     z-index: 3;
     color:#000000;
     background-color: rgba(249, 251, 246, 0.9);
-    padding: 10px 0 25px;
-    margin-top: -82px;
+    padding: 20px 0 29px;
+    margin-top: -93px;
 }
 
 .footer-visitsedona {
     flex-basis: 400px;
     text-align: center;
+    vertical-align: middle;
     font-size: 21px;
     line-height: 26px;
+    margin-right: 5px;
+    margin-top: -3px;
 }
 
 .footer-social {
@@ -552,6 +555,7 @@ img {
 .btn-htmlacademy {
     display: inline-block;
     vertical-align: middle;
+    margin-top: 3px;
 }
 
 .btn-htmlacademy {
